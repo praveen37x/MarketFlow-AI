@@ -1,8 +1,8 @@
 """
-MarketFlow-AI: RAG & AI Market Analyst Copilot
+MarketFlow-AI: Market Diagnostics & Signal Synthesizer
 Combines quantitative telemetry from the DuckDB Lakehouse Gold tier
-with unstructured market headlines via hybrid retrieval to produce
-structured market intelligence briefs and anomaly explanations.
+with ML feature store volatility predictions to produce structured
+market health reports, anomaly detection alerts, and microstructure signals.
 """
 from typing import Any
 from src.lakehouse.engine import DuckDBEngine
@@ -11,7 +11,7 @@ from src.ai.model import VolatilityRegimeModel
 
 
 class MarketAnalystAgent:
-    """AI Copilot providing contextual analysis over quantitative & textual data."""
+    """Quantitative signal synthesizer providing telemetry across lakehouse data marts."""
 
     def __init__(self, engine: DuckDBEngine, feature_store: FeatureStore, model: VolatilityRegimeModel):
         self.engine = engine
